@@ -9,6 +9,7 @@ class Kernel extends ConsoleKernel
 {
     protected $commands=[
         Commands\HourlyCopyPaste::class,
+        Commands\SendCurrncyPricesEMailToUsers::class,
     ];
     /**
      * Define the application's command schedule.
@@ -19,8 +20,9 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         // $schedule->command('inspire')->hourly();
-        $schedule->command('hourly:copypaste')->everyMinute();
+        $schedule->command('hourly:copypaste')->hourly();
         //everyMinute();---------hourly();
+        $schedule->command('every2h:sendemailprice')->everyTwoHours();
         }
 
     /**

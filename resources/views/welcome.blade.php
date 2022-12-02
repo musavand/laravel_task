@@ -23,7 +23,7 @@
        </div>
        <div class="row">
         <a href="/TableA/create">Task 3</a>
-        <p>Model/Migration/Controller/Vue View/Route/Redis/Cash/Axios</p>
+        <p>EMail/Notification/Sheduling/Command/Axios</p>
        </div>
        <div class="row">
         <a href="/TableA/create">Task 4</a>
